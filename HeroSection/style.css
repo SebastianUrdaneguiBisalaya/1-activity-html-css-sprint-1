@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+
 * {
   font-family: Roboto, sans-serif;
 }
 
 body {
   margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 .topper {
@@ -49,6 +54,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 #hero .container {
   width: 100%;
   max-width: 80rem;
@@ -59,6 +65,7 @@ body {
   flex-wrap: wrap;
   gap: 3rem;
 }
+
 #hero .content {
   text-align: center;
   width: 100%;
@@ -69,15 +76,18 @@ body {
 #hero .text {
   color: #fafbfc;
 }
+
 #hero .text {
   margin-bottom: 2rem;
 }
+
 #hero .button-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 #hero .button-solid {
   font-size: 1rem;
   font-weight: 700;
@@ -95,6 +105,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 #hero .button-solid:before {
   content: "";
   width: 0%;
@@ -108,9 +119,11 @@ body {
   z-index: -1;
   transition: width 0.3s;
 }
+
 #hero .button-solid:hover:before {
   width: 100%;
 }
+
 #hero .graphic {
   width: 100%;
   min-width: 120rem;
@@ -132,6 +145,7 @@ body {
   left: 0;
   z-index: -2;
 }
+
 #hero .background:before {
   content: "";
   width: 100%;
@@ -145,6 +159,7 @@ body {
   left: 0;
   z-index: 1;
 }
+
 #hero .background img {
   width: 100%;
   height: 100%;
@@ -207,7 +222,7 @@ body {
 }
 
 .navbar {
- padding: 1rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .navbar .container-nav {
@@ -215,6 +230,17 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .navbar .links-nav {
@@ -250,20 +276,21 @@ body {
   display: none;
 }
 
-@media (width > 992px)  {
+@media (width > 992px) {
 
   #hero .title {
-    font-size: 84px; 
+    font-size: 84px;
   }
 
   #hero .text {
-    font-size: 14px; 
-    max-width: 100%; 
+    font-size: 14px;
+    max-width: 100%;
   }
 
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
+
   .navbar .links-nav,
   .navbar .call-to-action {
     display: none;
