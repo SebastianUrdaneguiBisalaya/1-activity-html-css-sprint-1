@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+
+*{
+width: Fixed (1,920px)px;
+height: Hug (893px)px;
+top: -896px;
+left: -3236px;
+padding: 100px 320px 200px 320px;
+gap: 64px;
+opacity: 0px;
+font-family:Roboto;
+}
+.pricing{
+font-size: 16px;
+font-weight: 700;
+line-height: 19.2px;
+letter-spacing: 0.1em;
+text-align: left;
+Color: #F41E1E;
+}
+
+.title{
+    font-size: 49px;
+    font-weight: 900;
+    line-height: 58.8px;
+    text-align: left;
+}
+
+.button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 48px;
+gap: 24px;
+width: 174px;
+height: 56px;
+background: #F41E1E;
+flex: none;
+order: 1;
+flex-grow: 0;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.2px;
+text-align: center;
+color: white
+}
+
+.typea{
+    width: Fill (303.67px)px;
+    height: Hug (399px)px;
+    padding: 40px 32px 40px 32px;
+    gap: 0px;
+    opacity: 0px;     
+}
+
+typeb{
+    width: Fill (303.67px)px;
+    height: Hug (447px)px;
+    padding: 64px 32px 64px 32px;
+    gap: 0px;
+    opacity: 0px;
+    background-color:black;
+}
