@@ -3,12 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <!-- add css file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="hero">
+    <div class="top-bar-details">
+      <div class="top-bar-container">
+        <div class="contact-info">
+          <span class="span-message">
+            <img class="img-message" src="../assets/message.svg" alt="" />
+            <a id="company-email" href="#">stitchgym@gmail.com</a>
+          </span>
+          <span id="slash">|</span>
+          <span>Call us: +84 1985 33 999</span>
+          <span id="slash">|</span>
+          <span>Opening hours: Mon - Sat: 8:00am To 9:00pm</span>
+          <span id="slash">|</span>
+        </div>
+        <div class="social-media">
+          <a href="#"><img src="../assets/Facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="../assets/Twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="../assets/Instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <nav class="navbar">
+      <div class="container-nav">
+        <img class="logo" src="../assets/Logo.png" alt="Logo Gym" />
+        <ul class="links-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <a href="#" class="call-to-action">Join Us Today</a>
+        <img
+          class="menu-hamburguer"
+          src="../assets/hamburguer.png"
+          alt="Menu Hamburguer"
+        />
+      </div>
+    </nav>
+    <section id="hero">
       <div class="container">
         <div class="content">
           <div class="topper">Best Gym Of The City For Fitness</div>
@@ -24,8 +63,9 @@
       </div>
 
       <img
+        class="background"
         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
-        alt=""
+        alt="background-image"
       />
 
       <img
@@ -37,6 +77,6 @@
         loading="lazy"
         decoding="async"
       />
-    </div>
+    </section>
   </body>
 </html>
