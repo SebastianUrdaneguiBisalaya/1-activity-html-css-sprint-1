@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+
+:root{
+--color-primary: #F41E1E;
+--color-secondary: #F7F7F7;
+--color-light:#fff;
+--color-dark:#000;
+
+
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F7F7F7;
+    background-color: var(--color-secondary);
     font-family: Roboto;
 }
 
@@ -24,35 +34,35 @@ ul {
     font-size: 1rem;
 }
 
-.cs-container {
+.container {
     max-width: 1200px;
     padding: 3rem;
 }
   
 h3 {
-color: #F41E1E;
+color: var(--color-primary);
 }
 
-.container-submit {
-background-color: #F41E1E;
-color: #fff;
+.container__submit {
+background-color: var(--color-primary);
+color: var(--color-light);
 width: 7rem;
 height: 3rem;
-border: 1px solid #F41E1E;
+border: 1px solid var(--color-primary);
 cursor: pointer;
 transition: transform 1s ease;
 }
 
-.container-submit:hover {
+.container__submit:hover {
     transform: scale(1.1);
 }
 
-.cs-container {
+.container {
 display: grid;
 grid-template-columns: 1fr;
 }
 
-.cards-price {
+.cards__price {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -74,20 +84,20 @@ grid-template-columns: 1fr;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #fff;
+    background-color: var(--color-light);
 }
 
 p {
     font-size: 1rem;
 }
 
-.top {
-    background-color: #000;
-    color: #fff;
+.card__top {
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
   @media (width >= 786px) and (width <1100px) {
-    .cs-container {
+    .container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
         "container1 container3"
@@ -97,17 +107,17 @@ p {
         align-items: center;
     }
   
-    .container-title {
+    .container__title {
       grid-area: container1;
     }
-    .container-info-detail {
+    .container__detail {
       grid-area: container2;
     }
-    .container-submit {
+    .container__submit {
       grid-area: container3;
       justify-self: end;
     }
-    .cards-price {
+    .cards__price {
         grid-area: container4;
     }
   
@@ -119,32 +129,32 @@ p {
       font-size: 31;
     }
 
-    container-info-detail ul {
+    container__detail ul {
         display: grid;
         grid-template-columns: 1fr 1fr; 
     }
 
-    .container-info-detail li {
+    .container__detail li {
         grid-column: span 1;
     }
     
-    .container-info-detail li:nth-child(odd) {
+    .container__detail li:nth-child(odd) {
         grid-column: 1;
     }
 
-    .container-info-detail li:nth-child(even) {
+    .container__detail li:nth-child(even) {
         grid-column: 2;
     }
 
-    .cards-price {
+    .cards__price {
         display: flex;
         flex-direction: row;
         text-align: center;
     }
 
-    .top {
-        background-color: #000;
-        color: #fff;
+    .card__top {
+        background-color: var(--color-dark);
+        color: var(--color-light);
         transform: scale(1.1);
         box-shadow: 0 8px 12px rgba(0,0,0,0.2);
     }
@@ -152,7 +162,7 @@ p {
   
 
   @media (width >= 1100px) {
-    .cs-container {
+    .container {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: 
         "container1 container3 container3"
@@ -161,17 +171,17 @@ p {
         align-items: center;
     }
   
-    .container-title {
+    .container__title {
       grid-area: container1;
     }
-    .container-info-detail {
+    .container__detail {
       grid-area: container2;
     }
-    .container-submit {
+    .container__submit {
       grid-area: container3;
       justify-self: end;
     }
-    .cards-price {
+    .cards__price {
         grid-area: container4;
     }
   
@@ -183,15 +193,15 @@ p {
       font-size: 31;
     }
 
-    .cards-price {
+    .cards__price {
         display: flex;
         flex-direction: row;
         text-align: center;
     }
 
-    .top {
-        background-color: #000;
-        color: #fff;
+    .card__top {
+        background-color: var(--color-dark);
+        color: var(--color-light);
         transform: scale(1.1);
         box-shadow: 0 8px 12px rgba(0,0,0,0.2);
     }
