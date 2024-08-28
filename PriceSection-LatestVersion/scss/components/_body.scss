@@ -1,0 +1,30 @@
+@use "../shared/variables";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: variables.$font-family-base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$color-gray-light;
+}
+
+h3 {
+    color: variables.$color-red-strong;
+}  
+
+p {
+    font-size: 1rem;
+}  
+
+ul {
+    padding: 0px
+}
+
+
+

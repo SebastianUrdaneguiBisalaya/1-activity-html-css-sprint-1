@@ -1,0 +1,22 @@
+@use "../shared/variables";
+
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: variables.$max-width-container;
+    padding: 3rem;
+}
+
+.pricing__benefits ul {
+    display: grid;
+}
+
+.pricing__benefits ul>li {
+    display: flex;
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+}

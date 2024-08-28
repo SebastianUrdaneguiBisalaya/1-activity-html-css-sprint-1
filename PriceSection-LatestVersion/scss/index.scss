@@ -1,0 +1,122 @@
+@use "./shared/variables";
+@use "./components/body";
+@use "./components/benefits";
+@use "./components/button";
+@use "./components/cards";
+@use "./shared/breakpoints" as bp;
+
+@include bp.md {
+    .pricing {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "container1 container3"
+            "container2 container2"
+            "container4 container4";
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .pricing__title {
+        grid-area: container1;
+    }
+
+    .pricing__benefits {
+        grid-area: container2;
+    }
+
+    .pricing__button {
+        grid-area: container3;
+        justify-self: end;
+    }
+
+    .pricing__cards {
+        grid-area: container4;
+    }
+
+    #title-section {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 31;
+    }
+
+    .pricing__benefits ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing__benefits li {
+        grid-column: span 1;
+    }
+
+    .pricing__benefits li:nth-child(odd) {
+        grid-column: 1;
+    }
+
+    .pricing__benefits li:nth-child(even) {
+        grid-column: 2;
+    }
+
+    .pricing__cards {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .pricing__top {
+        background-color: var(variables.$color-black-strong);
+        color: var(variables.$color-white);
+        transform: scale(1.1);
+        box-shadow: 0 8px 12px var(variables.$color-black-light-shadow);
+    }
+}
+
+@include bp.lg {
+    .pricing {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "container1 container3 container3"
+            "container2 container4 container4";
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .pricing__title {
+        grid-area: container1;
+    }
+
+    .pricing__benefits {
+        grid-area: container2;
+    }
+
+    .pricing__button {
+        grid-area: container3;
+        justify-self: end;
+    }
+
+    .pricing__cards {
+        grid-area: container4;
+    }
+
+    #title-section {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 31;
+    }
+
+    .pricing__cards {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .top {
+        background-color: var(variables.$color-black-strong);
+        color: var(variables.$color-white);
+        transform: scale(1.1);
+        box-shadow: 0 8px 12px var(variables.$color-black-light-shadow);
+    }
+}
