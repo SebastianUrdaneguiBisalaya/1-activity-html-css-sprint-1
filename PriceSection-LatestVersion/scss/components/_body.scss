@@ -14,8 +14,13 @@ body {
     background-color: variables.$color-gray-light;
 }
 
+h1 {
+    font-size: variables.$font-size-title;
+}
+
 h3 {
     color: variables.$color-red-strong;
+    font-size: variables.$font-size-description;
 }  
 
 p {

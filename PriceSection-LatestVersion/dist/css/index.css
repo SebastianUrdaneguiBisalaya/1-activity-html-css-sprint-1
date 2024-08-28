@@ -12,8 +12,13 @@ body {
   background-color: #F7F7F7;
 }
 
+h1 {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+}
+
 h3 {
   color: #F41E1E;
+  font-size: clamp(1rem, 1.6vw, 3rem);
 }
 
 p {

@@ -2,6 +2,8 @@
 $font-family-base: 'Roboto', sans-serif;
 $font-weight-title: 900;
 $font-weight-description: 300;
+$font-size-title: clamp(1.9375rem, 3.9vw, 3.0625rem);
+$font-size-description: clamp(1rem, 1.6vw, 3rem);
 
 // Colors
 $color-white: #FFF;
