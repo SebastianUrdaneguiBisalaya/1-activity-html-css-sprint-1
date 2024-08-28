@@ -1,0 +1,15 @@
+@use "../shared/variables";
+
+.pricing__button {
+    background-color: variables.$color-red-strong;
+    color: variables.$color-white;
+    width: 7rem;
+    height: 3rem;
+    border: 1px solid variables.$color-red-strong;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.pricing__button:hover {
+    transform: scale(1.1);
+}

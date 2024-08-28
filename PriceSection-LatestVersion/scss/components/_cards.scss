@@ -1,0 +1,32 @@
+@use "../shared/variables";
+
+.pricing__cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing__card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: variables.$color-white;
+}
+
+.pricing__cardPrice {
+    font-weight: variables.$font-weight-title;
+    font-size: 2rem;
+}
+
+.pricing__cardTime {
+    font-weight: variables.$font-weight-description;
+    font-size: 1rem;
+}
+
+.pricing__card--top {
+    background-color: variables.$color-black-strong;
+    color: variables.$color-white;
+}
